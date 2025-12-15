@@ -1,0 +1,49 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build SFML Program",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "-IC:/SFML-3.0.2/include",
+                "-LC:/SFML-3.0.2/lib",
+                "-lsfml-graphics-3",
+                "-lsfml-window-3",
+                "-lsfml-system-3",
+                "-lopengl32",
+                "-lwinmm",
+                "-lgdi32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build and Run",
+            "type": "shell",
+            "command": "g++ -std=c++17 -g ${file} -o ${fileDirname}/${fileBasenameNoExtension}.exe -IC:/SFML-3.0.2/include -LC:/SFML-3.0.2/lib -lsfml-graphics-3 -lsfml-window-3 -lsfml-system-3 -lopengl32 -lwinmm -lgdi32 && ${fileDirname}/${fileBasenameNoExtension}.exe",
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            }
+        }
+    ]
+}
