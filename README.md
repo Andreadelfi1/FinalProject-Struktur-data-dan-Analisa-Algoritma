@@ -11,10 +11,10 @@ Brute Force dan Quadtree
 Simulasi menampilkan partikel bergerak bebas yang saling bertabrakan
 
 # Fitur
-1.Pergerakan Partikel: Setiap partikel bergerak dengan kecepatan random yang berbeda-beda
-2.Wall Collision: Partikel memantul ketika menabrak dinding dengan pembalikan arah velocity
-3.Particle Collision: Deteksi dan resolusi tabrakan antar partikel menggunakan elastic collision physics
-4.Boundary Correction: Posisi partikel otomatis disesuaikan agar tidak menembus dinding
+1. Pergerakan Partikel: Setiap partikel bergerak dengan kecepatan random yang berbeda-beda
+2. Wall Collision: Partikel memantul ketika menabrak dinding dengan pembalikan arah velocity
+3. Particle Collision: Deteksi dan resolusi tabrakan antar partikel menggunakan elastic collision physics
+4. Boundary Correction: Posisi partikel otomatis disesuaikan agar tidak menembus dinding
 
 # Kontrol Pada Program
 | Tombol | Fungsi | Keterangan |
